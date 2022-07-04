@@ -1,0 +1,465 @@
+/* ************
+1 Genrarel
+**************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #ff451b;
+  --secondary-color: #ffb324;
+  --third-color: #094094;
+  --dark-color: #494b50;
+  --bg-dark-gray: #5c5d64;
+  --bg-black: #1d1b1b;
+  --dark-light-color: #777a7f;
+
+  /* Text Color */
+  --primary-text: #ff451b;
+  --text-white: #fff;
+  --text-gray: #a7afbd;
+}
+/* font styling */
+span {
+  color: var(--secondary-color);
+}
+p {
+  color: var(--text-white);
+  font-size: 3vmin;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  font-size: 3vmin;
+  display: inline-block;
+}
+a:hover {
+  color: var(--text-white);
+}
+h2 {
+  color: var(--text-white);
+  font-size: 8vmin;
+}
+h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 6vmin;
+}
+h5 {
+  color: var(--text-white);
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-dark-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+.main-btn {
+  width: 10rem;
+  border-radius: 10px;
+  padding: 0.3rem 0;
+  transition: width 0.4s;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.main-btn:hover {
+  width: 12rem;
+  background-color: var(--secondary-color);
+}
+body {
+  background-image: url(../images/top-background.png);
+  background-size: cover;
+  background-position: center;
+}
+.social-icon a {
+  font-size: 1.9rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.social-icon a:hover {
+  color: var(--text-white);
+  transform: translateY(-10px);
+}
+.line {
+  width: 7rem;
+  height: 0.2rem;
+  background-color: #ff451b;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+/* ==========
+ 2/home page 
+ ===========*/
+/* ==========
+ 2.1/ navbar
+ ===========*/
+.navbar-brand img {
+  width: 16rem;
+}
+/* ============
+2.2/ hero section
+============== */
+.main-content {
+  padding-top: 7rem;
+}
+
+/* =============
+3/ about section
+=============== */
+.about {
+  margin-top: 1rem;
+}
+.about .accordion-body
+{
+  background-image: linear-gradient(to right, #00B09B, #669614);
+  border-radius: 10px;
+  margin-top: .8rem;
+}
+.accordion-item {
+  background-color: transparent;
+  margin-top: 0.5rem;
+}
+.about .accordion-header .accordion-button {
+  background-color: var(--bg-dark-gray);
+  outline: unset;
+  box-shadow: 0.2rem 0.2rem 0.5rem;
+  padding: 0;
+  padding-right: 2rem;
+  margin: 0 0.3125rem;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.about .accordion-header .about-title {
+  padding: 1.5rem 0.385rem;
+  width: 10rem;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  color: var(--text-white);
+}
+.about .accordion-header .accordion-button::after {
+  background-image: url("../images/up-arrow.svg");
+  background-position: center;
+  background-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  width: 8rem;
+  height: 100%;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  transition: all 0.5s ease-out;
+}
+.about .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/down-arrow.svg");
+  border-radius: 8px;
+}
+.accordion-body .card {
+  width: 60%;
+  border: none;
+  background: transparent;
+}
+.accordion-body .card img {
+  border-radius: 1rem;
+}
+.accordion-body .short-disc {
+  background-color: #293745;
+  width: 16rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  transform: translateX(-5%);
+  padding: 1rem 0;
+  z-index: 1;
+}
+.accordion-body .short-disc ul {
+  padding-left: 0.6rem;
+
+}
+.accordion-body .short-disc ul h5 {
+  margin: 0;
+  color: var(--text-gray);
+  font-size: 2.8vmin;
+}
+.accordion-body .short-disc ul p {
+  font-size: 15px;
+}
+.accordion-body .detail-disc h3 {
+  font-size: 4vmin;
+}
+.accordion-body .detail-disc p {
+  font-size: 16px !important;
+  color: var(--bg-black);
+}
+.accordion-body .detail-disc .main-btn {
+  font-size: 1rem;
+}
+/* == 3/ skills == */
+.services .accordion-body{
+ background-image: url(../images/services-img/back.png);
+ background-position: center;
+ background-size: cover;
+ border-radius: 1rem;
+}
+.services .accordion-header .accordion-button {
+  background-color: var(--bg-dark-gray);
+  outline: unset;
+  box-shadow: 0.2rem 0.2rem 0.5rem;
+  padding: 0;
+  padding-right: 2rem;
+  margin: 0 0.3125rem;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.services .accordion-header .skill-title {
+  padding: 1.5rem 0.385rem;
+  width: 10rem;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: var(--text-white);
+}
+.services .accordion-header .accordion-button::after {
+  background-image: url("../images/up-arrow.svg");
+  background-position: center;
+  background-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  width: 8rem;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  transition: all 0.5s ease-out;
+}
+.services .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/down-arrow.svg");
+  border-radius: 8px;
+}
+.services .glassmorphism{
+  width: 95%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: .5rem;
+  position: relative;
+  padding: 1rem;
+}
+.services .glassmorphism .drop{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 80%;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+}
+.services .glassmorphism .drop2{
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 30%;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+}
+.services .glassmorphism .drop3{
+  position: absolute;
+  top: 4rem;
+  right: 15rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+}
+.services .glassmorphism .skills-desc{
+  border-radius: .5rem;
+  color: whitesmoke;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+}
+.services .glassmorphism .inner-skil-desc img{
+  width: 1rem;
+}
+.services .glassmorphism .inner-skil-desc small{
+  color: whitesmoke;
+}
+/* == 4/ portfolio == */
+.portfolio .accordion-body
+{
+  background-image: linear-gradient(to right, #00B09B, #669614);
+  border-radius: 10px;
+  margin-top: .8rem;
+}
+.portfolio .accordion-header .accordion-button {
+  background-color: var(--bg-dark-gray);
+  outline: unset;
+  box-shadow: 0.2rem 0.2rem 0.5rem;
+  padding: 0;
+  padding-right: 2rem;
+  margin: 0 0.3125rem;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.portfolio .accordion-header .portfolio-title {
+  padding: 1.5rem 0.385rem;
+  width: 10rem;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  color: var(--text-white);
+}
+.portfolio .accordion-header .accordion-button::after {
+  background-image: url("../images/up-arrow.svg");
+  background-position: center;
+  background-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  width: 8rem;
+  height: 100%;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  transition: all 0.5s ease-out;
+}
+.portfolio .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/down-arrow.svg");
+  border-radius: 8px;
+}
+.portfolio .port-all-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.portfolio .port-all-img{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .hov-main:hover .hiddent-txt{
+  top: 0rem;
+}
+.portfolio .hiddent-txt{
+  border-radius: 1rem;
+  max-width: 93%;
+  max-height: 20.6rem;
+  height: 20.6rem;
+  padding: .5rem;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  position: absolute;
+  top: -25rem;
+  transition: all .5s ease;
+}
+.portfolio .hiddent-txt .line{
+  width: 5rem;
+  margin-bottom: .3rem;
+}
+.portfolio .hiddent-txt .main-btn{
+  font-size: 3vmin;
+}
+.portfolio .hiddent-txt h4{
+  color: var(--text-white);
+  font-size: 3vmin;
+}
+.portfolio .hiddent-txt p{
+  color: var(--text-gray);
+  font-size: 1.5vmax;
+}
+/* == 5/ contact == */
+.contact .accordion-body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .heading h1 {
+  color: var(--text-gray);
+  font-weight: 800;
+  font-size: 5.5vmin;
+}
+.contact .form input {
+  width: 90%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  background: transparent;
+  color: var(--text-white);
+}
+.contact .form textarea {
+  width: 90%;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background: transparent;
+  color: #777a7f;
+  border: 1px solid var(--dark-light-color);
+}
+.contact .form button {
+  color: white;
+  border: unset;
+  box-shadow: unset;
+  background: #ff451b;
+}
+.contact .accordion-header .accordion-button::after {
+  background-image: url("../images/up-arrow.svg");
+  background-position: center;
+  background-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  width: 8rem;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  transition: all 0.5s ease-out;
+}
+.contact .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/down-arrow.svg");
+  border-radius: 8px;
+}
+.contact .accordion-header .accordion-button {
+  background-color: var(--bg-dark-gray);
+  outline: unset;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--primary-color);
+  padding: 0;
+  padding-right: 2rem;
+  margin: 0 0.3125rem;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.contact button .contact-title {
+  background-color: var(--primary-color) !important;
+  padding: 1.5rem 0.385rem;
+  width: 10rem;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  color: var(--text-white);
+}

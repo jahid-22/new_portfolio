@@ -1,0 +1,207 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  /* nav bar */
+  .navbar-brand img {
+    width: 10rem;
+  }
+  header .container .main-btn {
+    font-size: 1.1rem;
+    width: 8rem;
+  }
+  /* hero section */
+  #hero .top-img {
+    padding-bottom: 0.8rem;
+  }
+
+  #hero .top-disc p {
+    font-size: 4vmin;
+  }
+  .social-icon a {
+    font-size: 1.7rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.8rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #hero .main-btn {
+    font-size: 1.1rem;
+  }
+
+  /* about section */
+  .accordion-body .card img {
+    display: none;
+  }
+  .accordion-body .short-disc {
+    width: 17rem;
+    border-radius: 5px;
+    position: unset;
+    top: 3rem;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    z-index: 1;
+  }
+  .accordion-body .short-disc ul h5 {
+    margin: 0;
+    color: var(--text-gray);
+    font-size: 3.7vmin;
+  }
+  .accordion-body .detail-disc h3 {
+    font-size: 5.5vmin;
+    margin-top: 1rem;
+  }
+  .about .accordion-header .about-title {
+    padding: .4rem 0.345rem;
+    width: 10rem;
+    border-radius: 8px;
+    color: var(--text-white);
+  }
+  /* portfoli section */
+  .portfolio .accordion-header .about-title {
+    padding: .4rem 0.345rem;
+    width: 10rem;
+    border-radius: 8px;
+    color: var(--text-white);
+  }
+  .portfolio .hiddent-txt{
+    width: 92.4%;
+  }
+  .portfolio .hiddent-txt h4{
+    color: var(--text-white);
+    font-size: 5vmin;
+  }
+  .portfolio .hiddent-txt p{
+    color: var(--text-gray);
+    font-size: 3.8vmin;
+  }
+  /* contact section */
+  .contact button .about-title {
+    padding: .4rem 0.345rem;
+    width: 10rem;
+    border-radius: 8px;
+    color: var(--text-white);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  /* hero section */
+  #hero .top-img {
+    padding-bottom: 0.8rem;
+  }
+
+  #hero .top-disc h2 {
+    font-size: 2.6rem;
+  }
+  #hero .top-disc p {
+    font-size: 1.3rem;
+  }
+  .social-icon a {
+    font-size: 1.9rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.8rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  /* about section */
+  .accordion-body .card{
+    background: transparent;
+  }
+  .accordion-body .card img {
+    width: 90%;
+  }
+  .accordion-body .short-disc {
+    width: 17rem;
+    height: 20rem;
+    border-radius: 1rem;
+    transform: translateX(-12%);
+    padding-top: 2rem;
+    z-index: 1;
+  }
+  .accordion-body .short-disc ul h5 {
+    margin: 0;
+    color: var(--text-gray);
+    font-size: 2.4vmin;
+  }
+  .accordion-body .detail-disc h3 {
+    font-size: 4vmin;
+    margin-top: 1rem;
+  }
+  .about .accordion-header .about-title {
+    padding: 1rem 0.345rem;
+    width: 10rem;
+    border-radius: 8px;
+    color: var(--text-white);
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  /* HERO SECTION */
+  #hero .top-disc h2 {
+    font-size: 2.6rem;
+  }
+  .social-icon a {
+    font-size: 1.9rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.8rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  /* about section */
+  .accordion-body .card{
+    background: transparent;
+  }
+  .accordion-body .card img {
+    width: 90%;
+  }
+  .accordion-body .short-disc {
+    width: 17rem;
+    height: 20rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 6rem;
+    transform: translateX(-50%);
+    padding-top: 2rem;
+    z-index: 1;
+  }
+  .accordion-body .short-disc ul h5 {
+    margin: 0;
+    color: var(--text-gray);
+    font-size: 2vmin;
+  }
+  .accordion-body .detail-disc h3 {
+    font-size: 4vmin;
+    margin-top: 1rem;
+  }
+  /* portfolio */
+  .portfolio .hiddent-txt{
+    width: 95%;
+  }
+  .portfolio .hiddent-txt .main-btn{
+    font-size: 1.5vmin;
+    margin-top: 0;
+  }
+  .portfolio .hiddent-txt .line{
+    height: .3rem;
+  }
+  .portfolio .hiddent-txt h4{
+    color: var(--text-white);
+    font-size: 2.3vmin;
+  }
+  .portfolio .hiddent-txt p{
+    color: var(--text-gray);
+    font-size: 2.3vmin;
+    margin-bottom: .4rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
