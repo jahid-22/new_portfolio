@@ -7,7 +7,8 @@
   <title>Portfolio</title><!-- bootstrap css links -->
   <link rel="stylesheet" href="./css/bootstrap.min.css"><!-- font awesome css links  -->
   <link rel="stylesheet" href="./css/all.min.css">
-  <link rel="stylesheet" href="./css/fontawesome.min.css"><!-- own css -->
+  <link rel="stylesheet" href="./css/fontawesome.min.css"><!-- progress bar css -->
+  <link rel="stylesheet" href="./css/progresscircle.css"><!-- own css -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
 </head>
@@ -31,7 +32,7 @@
           <div class="col-lg-7 col-md-7 order-lg-1 order-2 top-disc">
             <h3>Hi There</h3>
             <h2>This Is Tom</h2>
-            <h2>i'm a <span class="static" style="color: gold"></span></h2>
+            <h2>i'm a</h2>
             <p>this is my personal portfolio website,to show all my activity and work! i'm a creative <span>full stack web Developer. & python programmer.</span></p><a href="#" class="main-btn">Download CV</a>
             <div class="mt-3 social-icon">
               <a href="https://github.com/jahid-22"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a>
@@ -42,7 +43,6 @@
           </div>
         </div>
       </div>
-      
     </div>
   </section><!-- ** HERO SECTION END HERE. ** -->
   <!-- ** HOME PAGE END HERE ** -->
@@ -98,8 +98,8 @@
           </section><!-- ** SKILLS & SERVICES SECTION START FROM HERE ** -->
           <section id="services" class="services">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="skill-menu"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo"><span class="skill-title"><img src="./images/menu-icon/service-icon.svg" alt="about icon">Services</span></button></h2>
-              <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="skill-menu" data-bs-parent="#accordiontwo">
+              <h2 class="accordion-header" id="flush-headingthree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsethree"><span class="skill-title"><img src="./images/menu-icon/portfolio-icon.svg" alt="portfolio icon"> Services</span></button></h2>
+              <div id="flush-collapsetwo" class="accordion-collapse collapse" aria-labelledby="flush-headingtwo" data-bs-parent="#accordiontwo">
                 <div class="accordion-body">
                   <div class="container">
                     <div class="row glassmorphism">
@@ -110,9 +110,11 @@
                         <div class="drop drop3"></div>
                         <div class="line mx-auto"></div>
                         <p class="text-center">Wr Provide You Best Skillfull Work. We Have excelent Experiance About you What Want!</p>
+                        <div class="drop drop4"></div>
                       </div>
                       <div class="col-lg-6 col-sm-12 p-0 m-0 skills-desc">
                         <h1 class="fs-2 text-center mb-2">My Skills & Education</h1>
+                        <div class="drop drop5"></div>
                         <div class="line mx-auto w-50 m-0"></div>
                         <div class="inner-skil-desc m-3">
                           <h2 class="fs-3 m-0 d-block">Master In Hadis.</h2><span class="d-block"><img src="./images/services-img/calendar.svg" alt="time calander"> <small>2018 - 2022</small></span>
@@ -123,13 +125,56 @@
                         <div class="inner-skil-desc m-3">
                           <h2 class="fs-3 m-0 d-block">Web Development With Django</h2><span class="d-block"><img src="./images/services-img/calendar.svg" alt="time calander"> <small>2018 - 2022</small></span>
                         </div>
+                        <div class="drop drop6"></div>
                         <div class="inner-skil-desc m-3">
                           <h2 class="fs-3 m-0 d-block">translation from arabic to bangla</h2><span class="d-block"><img src="./images/services-img/calendar.svg" alt="time calander"> <small>2018 - 2022</small></span>
                         </div>
                       </div>
-
-                      <div class="col-lg-6 col-sm-12 progress-bar">
-                        
+                      <div class="drop drop7"></div>
+                      <div class="col-lg-6 col-sm-12 progress-bar bg-transparent">
+                        <div class="skills">
+                          <h1 class="fs-2 text-center mb-2">My Skills</h1>
+                          <div class="drop drop8"></div>
+                          <div class="line mx-auto"></div>
+                          <div class="row p-0 m-0 d-flex align-items-center justify-content-around">
+                            <div class="col-sm-3 progress-item">
+                              <div class="circlechart" data-percentage="95">
+                                HTML5
+                              </div>
+                            </div>
+                            <div class="drop drop9"></div>
+                            <div class="col-sm-3 progress-item">
+                              <div class="circlechart" data-percentage="85">
+                                CSS3
+                              </div>
+                            </div>
+                            <div class="col-sm-3 progress-item">
+                              <div class="circlechart text-6" data-percentage="70">
+                                bootstrap5
+                              </div>
+                              <div class="drop drop10"></div>
+                            </div> 
+                          </div>
+                          <div class="row p-0 m-0 d-flex align-items-center justify-content-around">
+                            <div class="col-sm-3 progress-item">
+                              <div class="circlechart" data-percentage="50">
+                                js
+                              </div>
+                            </div>
+                            <div class="drop drop9"></div>
+                            <div class="col-sm-3 progress-item">
+                              <div class="circlechart" data-percentage="85">
+                                python
+                              </div>
+                            </div>
+                            <div class="col-sm-3 progress-item">
+                              <div class="circlechart text-6" data-percentage="70">
+                                <p style="font-size: 1rem;">Django</p>
+                              </div>
+                              <div class="drop drop10"></div>
+                            </div> 
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -333,20 +378,29 @@
     </div>
   </div><!-- ABOUT PAGE END HERE ** -->
   <footer>
-    <address>
-      23/4 basa. dhaka, bangladesh.| email:lionhunterjahid@gmail.com| phone:018834333333
-    </address>
-    <p>all rights reserved by Developer jahid</p>
+    <div class="container">
+      <address>
+        23/4 basa. dhaka, bangladesh.| email:lionhunterjahid@gmail.com| phone:018834333333
+      </address>
+      <p>all rights reserved by Developer jahid</p>
+    </div>
   </footer><!-- js links -->
   <!-- bootstrap js link -->
   <script src="./js/bootstrap.min.js"></script> <!-- own js -->
    
-  <script src="./js/own.js"></script> <!-- Typed js link -->
+  <script src="./js/own.js"></script> <!-- jquery cdn link -->
    
-  <script src="./js/typed.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> <!-- progrss bar js -->
+   
+  <script src="./js/progresscircle.js"></script> 
   <script>
 
 
+      $(".circlechart").circlechart();
+  </script> <!-- Typed js link -->
+   
+  <script src="./js/typed.js"></script> 
+  <script>
 
 
       var typed = new Typed(".static", {
