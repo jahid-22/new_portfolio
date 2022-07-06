@@ -52,32 +52,54 @@
     margin-top: 1rem;
   }
   .about .accordion-header .about-title {
-    padding: .4rem 0.345rem;
+    padding: 0.4rem 0.345rem;
     width: 10rem;
     border-radius: 8px;
     color: var(--text-white);
+  }
+  /* service section */
+  .services .accordion-header .skill-title {
+    padding: 0.4rem 0.345rem;
+    width: 10rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: var(--text-white);
+  }
+  /* progress bar */
+  .services .glassmorphism .progress-bar .skills {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    margin-top: 1rem;
   }
   /* portfoli section */
-  .portfolio .accordion-header .about-title {
-    padding: .4rem 0.345rem;
+  .portfolio .accordion-header .portfolio-title {
+    padding: 0.4rem 0.345rem;
     width: 10rem;
     border-radius: 8px;
     color: var(--text-white);
   }
-  .portfolio .hiddent-txt{
+  .portfolio .hiddent-txt {
     width: 92.4%;
   }
-  .portfolio .hiddent-txt h4{
+  .portfolio .hiddent-txt h4 {
     color: var(--text-white);
     font-size: 5vmin;
   }
-  .portfolio .hiddent-txt p{
+  .portfolio .hiddent-txt p {
     color: var(--text-gray);
     font-size: 3.8vmin;
   }
   /* contact section */
-  .contact button .about-title {
-    padding: .4rem 0.345rem;
+  .contact button .contact-title {
+    padding: 0.4rem 0.345rem;
     width: 10rem;
     border-radius: 8px;
     color: var(--text-white);
@@ -107,7 +129,7 @@
     transition: all 0.3s ease-in-out;
   }
   /* about section */
-  .accordion-body .card{
+  .accordion-body .card {
     background: transparent;
   }
   .accordion-body .card img {
@@ -136,7 +158,6 @@
     border-radius: 8px;
     color: var(--text-white);
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -155,7 +176,7 @@
     transition: all 0.3s ease-in-out;
   }
   /* about section */
-  .accordion-body .card{
+  .accordion-body .card {
     background: transparent;
   }
   .accordion-body .card img {
@@ -181,24 +202,24 @@
     margin-top: 1rem;
   }
   /* portfolio */
-  .portfolio .hiddent-txt{
+  .portfolio .hiddent-txt {
     width: 95%;
   }
-  .portfolio .hiddent-txt .main-btn{
+  .portfolio .hiddent-txt .main-btn {
     font-size: 1.5vmin;
     margin-top: 0;
   }
-  .portfolio .hiddent-txt .line{
-    height: .3rem;
+  .portfolio .hiddent-txt .line {
+    height: 0.3rem;
   }
-  .portfolio .hiddent-txt h4{
+  .portfolio .hiddent-txt h4 {
     color: var(--text-white);
     font-size: 2.3vmin;
   }
-  .portfolio .hiddent-txt p{
+  .portfolio .hiddent-txt p {
     color: var(--text-gray);
     font-size: 2.3vmin;
-    margin-bottom: .4rem;
+    margin-bottom: 0.4rem;
   }
 }
 

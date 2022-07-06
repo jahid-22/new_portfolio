@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Oswald;
 }
 
 :root {
@@ -146,8 +146,8 @@ body {
   border-radius: 8px;
 }
 .about .accordion-header .about-title {
-  padding: 1.5rem 0.385rem;
-  width: 10rem;
+  padding: 1.8rem 0.385rem;
+  width: 12rem;
   background-color: var(--third-color);
   border-radius: 8px;
   color: var(--text-white);
@@ -209,7 +209,7 @@ body {
 .accordion-body .detail-disc .main-btn {
   font-size: 1rem;
 }
-/* == 3/ skills & services == */
+/* == 4/ skills & services == */
 .services .accordion-body{
  background-image: url(../images/services-img/back.png);
  background-position: center;
@@ -230,8 +230,8 @@ body {
   border-radius: 8px;
 }
 .services .accordion-header .skill-title {
-  padding: 1.5rem 0.385rem;
-  width: 10rem;
+  padding: 1.8rem 0.385rem;
+  width: 12rem;
   background-color: var(--primary-color);
   border-radius: 8px;
   color: var(--text-white);
@@ -354,14 +354,20 @@ body {
 }
   /* skill description */
 .services .glassmorphism .skills-desc{
+  width: 49%;
   border-radius: .5rem;
-  color: whitesmoke;
+  color: #000000 !important;
+  font-weight: 00;
   background: rgba(255, 255, 255, 0.44);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(10px);
 border: 1px solid rgba(255, 255, 255, 0.16);
+margin-right: 0rem;
+}
+.services .glassmorphism .inner-skil-desc h2{
+  color: #000000 !important;
 }
 .services .glassmorphism .inner-skil-desc img{
   width: 1rem;
@@ -402,8 +408,8 @@ border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
 }
 .portfolio .accordion-header .portfolio-title {
-  padding: 1.5rem 0.385rem;
-  width: 10rem;
+  padding: 1.8rem 0.385rem;
+  width: 12rem;
   background-color: var(--third-color);
   border-radius: 8px;
   color: var(--text-white);
@@ -536,8 +542,8 @@ border: 1px solid rgba(255, 255, 255, 0.16);
 }
 .contact button .contact-title {
   background-color: var(--primary-color) !important;
-  padding: 1.5rem 0.385rem;
-  width: 10rem;
+  padding: 1.8rem 0.385rem;
+  width: 12rem;
   background-color: var(--third-color);
   border-radius: 8px;
   color: var(--text-white);
