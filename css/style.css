@@ -364,7 +364,6 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(10px);
 border: 1px solid rgba(255, 255, 255, 0.16);
-margin-right: 0rem;
 }
 .services .glassmorphism .inner-skil-desc h2{
   color: #000000 !important;
@@ -559,4 +558,28 @@ footer .container{
 }
 footer .container p{
   margin: 0;
+}
+footer .container .address{
+  text-align: start;
+  padding-left: .7rem;
+}
+footer .container .address::after{
+  content: '';
+  width: .3rem;
+  height: 1.6rem;
+  background: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .container .copy p{
+  color: var(--text-gray);
+  font-size: 14px;
+}
+footer .container .copy p a{
+  color: blanchedalmond;
+  text-decoration: underline;
+}
+footer .container .copy p a:hover{
+  color: #ffb324;
 }
