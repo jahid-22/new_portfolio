@@ -120,7 +120,37 @@ body {
 .main-content {
   padding-top: 7rem;
 }
+#hero .main-content .slide-left{
+  animation: slide-left 1s linear forwards;
+  -webkit-animation: slide-left 1s linear forwards;
+}
+@keyframes slide-left {
+  0%{
+    transform: translate(100px);
+    opacity: 0;
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+    -ms-transform: translate(100px);
+    -o-transform: translate(100px);
+}
+100%{
+    transform: translate(0px);
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    -o-transform: translate(0px);
+}
+}
 
+p.slide-left{
+  animation-delay: 1s !important;
+  opacity: 0;
+}
+a.slide-left{
+  animation-delay: 2s !important;
+  opacity: 0;
+}
 /* =============
 3/ about section
 =============== */
