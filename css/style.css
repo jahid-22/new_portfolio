@@ -29,7 +29,7 @@ span {
 }
 p {
   color: var(--text-white);
-  font-size: 3vmin;
+  font-size: 1.4rem;
   -webkit-font-size: 4vmin;
   -webkit-letter-spacing: 1px;
   letter-spacing: 1px;
@@ -171,12 +171,12 @@ body {
   background-image: url("../images/down-arrow.svg");
   border-radius: 8px;
 }
-.accordion-body .card {
+.accordion-body .a-card {
   width: 60%;
   border: none;
   background: transparent;
 }
-.accordion-body .card img {
+.accordion-body .a-card img {
   border-radius: 1rem;
 }
 .accordion-body .short-disc {
@@ -266,6 +266,9 @@ body {
   border-radius: 0.5rem;
   position: relative;
   padding: 1rem;
+}
+.services .glass-header{
+  font-weight: 600;
 }
 .services .glassmorphism .drop {
   width: 3rem;
@@ -361,11 +364,19 @@ body {
   color: #000000 !important;
   font-weight: 00;
   background: rgba(255, 255, 255, 0.44);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.services .glassmorphism .skills-desc h1{
+  font-size: 2rem;
+  font-weight: 600;
 }
 .services .glassmorphism .inner-skil-desc h2 {
   color: #000000 !important;
@@ -374,7 +385,7 @@ body {
   width: 1rem;
 }
 .services .glassmorphism .inner-skil-desc small {
-  color: whitesmoke;
+  color: rgb(54, 38, 2);
 }
 /* progress bar */
 .services .glassmorphism .progress-bar .skills {
@@ -515,6 +526,9 @@ body {
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
+}
+.portfolio .card .portfolio-last{
+  width: 100%;
 }
 /* == 5/ contact == */
 .contact .accordion-body {

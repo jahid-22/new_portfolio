@@ -1,28 +1,35 @@
 /* ====== break poins=====
-1/ (max-width: 576px) 
-2/ (max-width: 768px) (min-width: 576px) 
+1/ (min-width:320px) and (max-width:480px)
+2/ (min-width:480px) and (max-width:768px)
 3/ (max-width: 992px)
  */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 576px) {
-  /* nav bar */
-  .navbar-brand img {
-    width: 10rem;
+
+ /* For Mobile devices: 320px-480px */
+ @media only screen and (min-width:320px) and (max-width:480px) {
+  /* HOME PAGE */
+  /* HOME PAGE *1*  nav bar */
+  header{
+    overflow-x: hidden;
   }
-  header .container .main-btn {
-    font-size: 1.1rem;
+  .navbar-brand img {
     width: 8rem;
   }
-  /* hero section */
+  header .container .main-btn {
+    font-size: 1rem;
+    width: 9rem;
+  }
+   /* HOME PAGE *2* hero section */
+  #hero{
+    overflow-x: hidden;
+  }
+  #hero .top-disc p {
+    font-size: 1rem;
+  }
   #hero .top-img {
     padding-bottom: 0.8rem;
   }
-
-  #hero .top-disc p {
-    font-size: 4vmin;
-  }
   .social-icon a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-left: 0.5rem;
     margin-bottom: 0.8rem;
     -webkit-transition: all 0.3s ease-in-out;
@@ -31,12 +38,12 @@
     transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
 }
-  #hero .main-btn {
-    font-size: 1.1rem;
+  .main-btn {
+    font-size: 1rem;
   }
 
   /* about section */
-  .accordion-body .card img {
+  .accordion-body .a-card img {
     display: none;
   }
   .accordion-body .short-disc {
@@ -51,33 +58,49 @@
   .accordion-body .short-disc ul h5 {
     margin: 0;
     color: var(--text-gray);
-    font-size: 3.7vmin;
+    font-size: 1rem;;
   }
   .accordion-body .detail-disc h3 {
-    font-size: 5.5vmin;
+    font-size: 1.5rem;
     margin-top: 1rem;
   }
   .about .accordion-header .about-title {
     padding: 0.4rem 0.345rem;
-    width: 11rem;
-    font-size: 20px ;
-    border-radius: 8px;
+    width: 9rem;
+    font-size: 1rem ;
     color: var(--text-white);
-  }
-  /* service section */
-  .services .accordion-header .skill-title {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+   /* service section */
+   .services{
+    overflow-x: hidden;
+   }
+   .services .accordion-header .skill-title {
     padding: 0.4rem 0.345rem;
-    width: 11rem;
-    font-size: 20px;
-    background-color: var(--primary-color);
-    border-radius: 8px;
+    width: 9rem;
+    font-size: 1rem ;
     color: var(--text-white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
   }
-    /* skill description */
+  .services .glass-breaf {
+    font-size: 1.1rem;
+  }
+    /* service *1* skill description */
   .services .glassmorphism .skills-desc{
     width: 100%;
+    margin: 0;
+    padding: 2rem 0;
   }
-  /* progress bar */
+  /* service *2* progress bar */
   .services .glassmorphism .progress-bar .skills {
     width: 100%;
     height: 100%;
@@ -92,143 +115,226 @@
     margin-top: 1rem;
   }
   /* portfoli section */
-
   .portfolio .accordion-header .portfolio-title {
     padding: 0.4rem 0.345rem;
-    width: 11rem;
-    font-size: 20px;
-    background-color: var(--third-color);
-    border-radius: 8px;
+    width: 9rem;
+    font-size: 1rem ;
     color: var(--text-white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
   }
-  /* contact section */
-  .contact button .contact-title {
+  .portfolio .card{
+    width: 16rem;
+    position: relative;
+    margin-top: .3rem;
+  }
+  .portfolio .card .content h4{
+    text-align: center;
+    color: #ff451b;
+  }
+  .portfolio .card .content p{
+    font-size: .9rem;
+    text-align: justify;
+    margin: 0;
+  }
+  .portfolio .card .content .main-btn{
+    font-size: .8rem;
+    display: block;
+    margin: 0 auto;
+    width: 7rem;
+  }
+
+   /* contact section */
+   .contact button .contact-title {
     padding: 0.4rem 0.345rem;
-    width: 11rem;
-    font-size: 20px;
-    border-radius: 8px;
+    width: 9rem;
+    font-size: 1rem ;
     color: var(--text-white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
   }
+
+  footer .footer-card-1{
+    width: 100%;
+  }
+  footer .footer-card-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-card-2 .address{
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  footer .footer-card-2 .copy a{
+    font-size: 1rem;
+  }
+ }
+/* FOR MANAGING ABOUT CARD & DISCS  */
+@media only screen and (min-width:500px) and (max-width:620px) {
+
+  .accordion-body .short-disc{
+    width: 14rem;
+    position: absolute;
+    top: 1rem;
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) and (min-width: 576px) {
-  /* hero section */
-  #hero .top-img {
-    padding-bottom: 0.8rem;
-  }
-
-  #hero .top-disc h2 {
-    font-size: 2.6rem;
-  }
-  #hero .top-disc p {
-    font-size: 1.3rem;
-  }
-  .social-icon a {
-    font-size: 1.9rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.8rem;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  /* about section */
-  .accordion-body .card {
-    background: transparent;
-  }
-  .accordion-body .card img {
-    width: 90%;
-  }
-  .accordion-body .short-disc {
-    width: 17rem;
-    height: 20rem;
-    border-radius: 1rem;
-    transform: translateX(-12%);
-    padding-top: 2rem;
-    z-index: 1;
+  .accordion-body .a-card img {
+    width: 19rem;
+    padding: 0 0 .7rem 0;
   }
   .accordion-body .short-disc ul h5 {
     margin: 0;
     color: var(--text-gray);
-    font-size: 2.4vmin;
+    font-size: 1.3rem;;
+  }
+  .accordion-body .short-disc ul p{
+    font-size: 1.1rem;
   }
   .accordion-body .detail-disc h3 {
-    font-size: 4vmin;
+    font-size: 2rem;
     margin-top: 1rem;
   }
-  .about .accordion-header .about-title {
-    padding: 1rem 0.345rem;
-    width: 10rem;
-    border-radius: 8px;
-    color: var(--text-white);
+  .accordion-body .detail-disc p{
+    font-size: 2rem;
   }
-  /* skill description */
+  .main-btn {
+    font-size: 2rem;
+  }
+  /* service section */
+  .services .glass-breaf {
+    font-size: 1.6rem;
+  }
+    /* service *1* skill description */
   .services .glassmorphism .skills-desc{
     width: 100%;
-    margin-bottom: .5rem;
+    margin: 0;
+    padding: 2rem 0;
   }
-
-  /* portfolio section */
-
+  .services .glassmorphism .inner-skil-desc h2 {
+    color: #000000 !important;
+    font-size: 2rem !important;
+  }
+  .services .glassmorphism .inner-skil-desc img {
+    width: 1rem;
+  }
+  .services .glassmorphism .inner-skil-desc small {
+    color: rgb(54, 38, 2);
+    font-size: 1rem;
+  }
+  /* service *2* progress bar */
+  .services .glassmorphism .progress-bar .skills {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    margin-top: 1rem;
+  }
+  .main-btn {
+    font-size: 1.4rem;
+  }
+  
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) and (min-width: 769px) {
-  /* HERO SECTION */
-  #hero .top-disc h2 {
-    font-size: 2.2rem;
+/* For Tablets or iPad: 620px - 768px */
+@media only screen and (min-width:620px) and (max-width:768px) {
+
+  /* hero section */
+  .navbar-brand img {
+    width: 14rem;
   }
-  .social-icon a {
-    font-size: 1.9rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.8rem;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  header .container .main-btn {
+    font-size: 1.5rem;
+    width: 12rem;
+  } 
+  #hero .main-btn {
+    font-size: 1.3rem;
   }
   /* about section */
-  .accordion-body .card {
-    background: transparent;
-  }
-  .accordion-body .card img {
-    width: 90%;
-  }
   .accordion-body .short-disc {
-    width: 17rem;
-    height: 20rem;
-    border-radius: 1rem;
+    width: 19rem;
+    border-radius: 5px;
     position: absolute;
-    top: 6rem;
-    transform: translateX(-50%);
-    padding-top: 2rem;
+    top: 2rem;
+    padding: 1rem 0rem;
     z-index: 1;
-  }
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+}
+.accordion-body .a-card img {
+  width: 22rem;
+  padding: 0 0 1rem 0;
+}
   .accordion-body .short-disc ul h5 {
     margin: 0;
     color: var(--text-gray);
-    font-size: 2vmin;
+    font-size: 1.3rem;;
+  }
+  .accordion-body .short-disc ul p{
+    font-size: 1.2rem;
   }
   .accordion-body .detail-disc h3 {
-    font-size: 4vmin;
+    font-size: 2.5rem;
     margin-top: 1rem;
   }
-   /* skill description */
-   .services .glassmorphism .skills-desc{
-    width: 100%;
-    margin-bottom: .5rem;
+  .accordion-body .detail-disc p{
+    font-size: 2.9rem;
   }
-  /* portfolio section */
 
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* For Laptop or small-size screen */
+@media only screen and (min-width:769px) and (max-width:992px) {
+  /* about section */
+  .accordion-body .short-disc {
+    width: 23rem;
+    transform: translateX(-90px);
+    -webkit-transform: translateX(-90px);
+    -moz-transform: translateX(-90px);
+    -ms-transform: translateX(-90px);
+    -o-transform: translateX(-90px);
 }
-
-/* 
-
-
-
-*/
+.accordion-body .short-disc ul h5 {
+  margin: 0;
+  color: var(--text-gray);
+  font-size: 1.3rem;;
+}
+.accordion-body .short-disc ul p{
+  font-size: 1.2rem;
+}
+.accordion-body .a-card img {
+  width: 22rem;
+  padding: 0 0 1rem 0;
+}
+.accordion-body .detail-disc h3 {
+  font-size: 2.5rem;
+  margin-top: .3rem;
+}
+.accordion-body .detail-disc p{
+  font-size: 2.9rem;
+}
+  /* service *** skill description */
+  .services .glassmorphism .skills-desc{
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+  }
+}
