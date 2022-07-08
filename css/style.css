@@ -30,7 +30,11 @@ span {
 p {
   color: var(--text-white);
   font-size: 3vmin;
+  -webkit-font-size: 4vmin;
+  -webkit-letter-spacing: 1px;
   letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -moz-font-size: 3vmin;
 }
 a {
   text-decoration: none;
@@ -123,11 +127,10 @@ body {
 .about {
   margin-top: 1rem;
 }
-.about .accordion-body
-{
-  background-image: linear-gradient(to right, #00B09B, #669614);
+.about .accordion-body {
+  background-image: linear-gradient(to right, #00b09b, #669614);
   border-radius: 10px;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 .accordion-item {
   background-color: transparent;
@@ -189,7 +192,6 @@ body {
 }
 .accordion-body .short-disc ul {
   padding-left: 0.6rem;
-
 }
 .accordion-body .short-disc ul h5 {
   margin: 0;
@@ -203,19 +205,19 @@ body {
   font-size: 4vmin;
 }
 .accordion-body .detail-disc p {
-  font-size: 16px !important;
+  font-size: 18px !important;
   color: var(--bg-black);
 }
 .accordion-body .detail-disc .main-btn {
   font-size: 1rem;
 }
 /* == 4/ skills & services == */
-.services .accordion-body{
- background-image: url(../images/services-img/back.png);
- background-position: center;
- background-size: cover;
- border-radius: 1rem;
- margin-top: 1rem;
+.services .accordion-body {
+  background-image: url(../images/services-img/back.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 .services .accordion-header .accordion-button {
   background-color: var(--bg-dark-gray);
@@ -252,147 +254,146 @@ body {
   background-image: url("../images/down-arrow.svg");
   border-radius: 8px;
 }
-.services .glassmorphism{
+.services .glassmorphism {
   width: 95%;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: .5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
   position: relative;
   padding: 1rem;
 }
-.services .glassmorphism .drop{
+.services .glassmorphism .drop {
   width: 3rem;
   height: 3rem;
   border-radius: 80%;
-  background: rgba( 255, 255, 255, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop2{
+.services .glassmorphism .drop2 {
   position: absolute;
   top: 2rem;
   right: 0;
   width: 2rem;
   height: 2rem;
   border-radius: 20%;
-  background: rgba( 255, 255, 255, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop3{
+.services .glassmorphism .drop3 {
   position: absolute;
   top: 4rem;
   right: 15rem;
   width: 3rem;
   height: 3rem;
   border-radius: 30%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop5{
+.services .glassmorphism .drop5 {
   position: absolute;
   top: 18rem;
   left: 5rem;
   width: 3rem;
   height: 3rem;
   border-radius: 30%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop6{
+.services .glassmorphism .drop6 {
   position: absolute;
   top: 30rem;
   left: 10rem;
   width: 3rem;
   height: 3rem;
   border-radius: 30%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop7{
+.services .glassmorphism .drop7 {
   position: absolute;
   top: 24rem;
   left: 17rem;
   width: 3rem;
   height: 3rem;
   border-radius: 45%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop8{
+.services .glassmorphism .drop8 {
   position: absolute;
   top: 13rem;
   right: 5rem;
   width: 3rem;
   height: 3rem;
   border-radius: 30%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop9{
+.services .glassmorphism .drop9 {
   position: absolute;
   top: 13rem;
   right: 5rem;
   width: 3rem;
   height: 3rem;
   border-radius: 30%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-.services .glassmorphism .drop10{
+.services .glassmorphism .drop10 {
   position: absolute;
   top: 25rem;
   right: 15rem;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: rgba( 255, 255, 25, 0.20 );
-  box-shadow: 4px 4px 10px  rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 25, 0.2);
+  box-shadow: 4px 4px 10px rgba(31, 38, 135, 0.37);
 }
-  /* skill description */
-.services .glassmorphism .skills-desc{
+/* skill description */
+.services .glassmorphism .skills-desc {
   width: 49%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: #000000 !important;
   font-weight: 00;
   background: rgba(255, 255, 255, 0.44);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
-.services .glassmorphism .inner-skil-desc h2{
+.services .glassmorphism .inner-skil-desc h2 {
   color: #000000 !important;
 }
-.services .glassmorphism .inner-skil-desc img{
+.services .glassmorphism .inner-skil-desc img {
   width: 1rem;
 }
-.services .glassmorphism .inner-skil-desc small{
+.services .glassmorphism .inner-skil-desc small {
   color: whitesmoke;
 }
 /* progress bar */
-.services .glassmorphism .progress-bar .skills{
+.services .glassmorphism .progress-bar .skills {
   width: 100%;
   height: 100%;
-  border-radius: .5rem;
-background: rgba(255, 255, 255, 0.44);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 /* == 4/ portfolio == */
-.portfolio .accordion-body
-{
-  background-image: linear-gradient(to right, #00B09B, #669614);
+.portfolio .accordion-body {
+  background-image: linear-gradient(to right, #00b09b, #669614);
   border-radius: 10px;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 .portfolio .accordion-header .accordion-button {
   background-color: var(--bg-dark-gray);
@@ -424,49 +425,96 @@ border: 1px solid rgba(255, 255, 255, 0.16);
   background-color: var(--third-color);
   border-radius: 8px;
   transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .portfolio .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url("../images/down-arrow.svg");
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
-.portfolio .port-all-img img{
+/* portfolio card section */
+
+.portfolio .card{
+  width: 19rem;
+  position: relative;
+}
+.portfolio .card .imgbox{
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
 }
-.portfolio .port-all-img{
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
+.portfolio .card .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
-.portfolio .hov-main:hover .hiddent-txt{
-  top: 0rem;
+.portfolio .card:hover .imgbox img{
+  opacity: .6;
 }
-.portfolio .hiddent-txt{
-  border-radius: 1rem;
-  max-width: 93%;
-  max-height: 20.6rem;
-  height: 20.6rem;
-  padding: .5rem;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+.portfolio .card .content{
+  background-color: #000000;
+  opacity: .8;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 80%;
+  height: 2rem;
   position: absolute;
-  top: -25rem;
-  transition: all .5s ease;
+  bottom: .8rem;
+  left: 0;
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  overflow: hidden;
+  padding: 0 .5rem;
 }
-.portfolio .hiddent-txt .line{
-  width: 5rem;
-  margin-bottom: .3rem;
+.portfolio .card .content h4{
+  text-align: center;
+  color: #ff451b;
 }
-.portfolio .hiddent-txt .main-btn{
-  font-size: 3vmin;
+.portfolio .card .content p{
+  font-size: 1rem;
+  text-align: justify;
 }
-.portfolio .hiddent-txt h4{
-  color: var(--text-white);
-  font-size: 3vmin;
+.portfolio .card .content .main-btn{
+  font-size: .9rem;
+  display: block;
+  margin: 0 auto;
 }
-.portfolio .hiddent-txt p{
-  color: var(--text-gray);
-  font-size: 1.5vmax;
+.portfolio .card:hover .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
 }
 /* == 5/ contact == */
 .contact .accordion-body {
@@ -549,37 +597,39 @@ border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 /* == 6/ footer ==*/
-footer .container{
+footer .container {
   background: #756442;
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 8px;
   text-align: center;
 }
-footer .container p{
+
+footer .container .address {
+  text-align: start;
+  padding-left: 0.7rem;
+}
+footer .container .address address {
+  padding: 0;
   margin: 0;
 }
-footer .container .address{
-  text-align: start;
-  padding-left: .7rem;
-}
-footer .container .address::after{
-  content: '';
-  width: .3rem;
-  height: 1.6rem;
+footer .container .address::after {
+  content: "";
+  width: 0.3rem;
+  height: 2.6rem;
   background: var(--primary-color);
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
-footer .container .copy p{
+footer .container .copy p {
   color: var(--text-gray);
   font-size: 14px;
 }
-footer .container .copy p a{
+footer .container .copy p a {
   color: blanchedalmond;
   text-decoration: underline;
 }
-footer .container .copy p a:hover{
+footer .container .copy p a:hover {
   color: #ffb324;
 }
