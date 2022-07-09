@@ -597,12 +597,7 @@ a.slide-left{
   color: #777a7f;
   border: 1px solid var(--dark-light-color);
 }
-.contact .form button {
-  color: white;
-  border: unset;
-  box-shadow: unset;
-  background: #ff451b;
-}
+
 .contact .accordion-header .accordion-button::after {
   background-image: url("../images/up-arrow.svg");
   background-position: center;
