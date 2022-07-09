@@ -597,7 +597,6 @@ a.slide-left{
   color: #777a7f;
   border: 1px solid var(--dark-light-color);
 }
-
 .contact .accordion-header .accordion-button::after {
   background-image: url("../images/up-arrow.svg");
   background-position: center;
